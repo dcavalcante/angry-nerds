@@ -6,6 +6,7 @@ var canvasWidth = gameCanvas.width;
 var canvasHeight = gameCanvas.height;
 
 var resourcesLoaded = 0;
+var backgroundImage = new Image();
 var schoolImage = new Image();
 var forceImage = new Image();
 var cannonBaseImage = new Image();
