@@ -13,6 +13,16 @@ var backgroundResource = new Resource("img/cenario.png", {x:100, y:200});
 
 
 
+setTimeout(function() {
+	if(Resource.totalLoaded += Resource.totalInstatiated) {
+		backgroundResource.draw(context2d);
+		// context2d.drawImage(backgroundImage, 0, 0, canvasWidth, canvasHeight);
+		// context2d.drawImage(schoolImage, 0, 0, schoolImage.width, schoolImage.height);
+		// context2d.drawImage(forceImage, 0, 0, forceImage.width, forceImage.height);
+		// context2d.drawImage(cannonBaseImage, 0, 0, cannonBaseImage.width, cannonBaseImage.height);
+	}
+}, 1000);
+
 
 // var resourcesLoaded = 0;
 // var backgroundImage = new Image();
@@ -23,14 +33,7 @@ var backgroundResource = new Resource("img/cenario.png", {x:100, y:200});
 // backgroundImage.onload = loadAssets;
 // backgroundImage.src = "img/cenario.png";
 
-// setTimeout(function() {
-// 	if(resourcesLoaded >= 1) {
-// 		context2d.drawImage(backgroundImage, 0, 0, canvasWidth, canvasHeight);
-// 		context2d.drawImage(schoolImage, 0, 0, schoolImage.width, schoolImage.height);
-// 		context2d.drawImage(forceImage, 0, 0, forceImage.width, forceImage.height);
-// 		context2d.drawImage(cannonBaseImage, 0, 0, cannonBaseImage.width, cannonBaseImage.height);
-// 	}
-// }, 1000);
+
 
 // function onResourceLoaded() {
 // 	resourcesLoaded += 1;
